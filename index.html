@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Calculator">
     <link rel="stylesheet" href="style.css">
     <title>calculator</title>
 </head>
@@ -13,45 +14,46 @@
     <div class="container">
 
         <div class="screen">
-            0
+            <output class="user-input" type="text" id="user-input">0</output>
+             <output class="result" type="text" id="result">&nbsp;</output>
         </div>
 
         <div class="button-container">
-            <button class="btn btn1">rad</button>
-            <button class="btn btn2">deg</button>
-            <button class="btn btn3">x!</button>
-            <button class="btn btn4">(</button>
-            <button class="btn btn5">)</button>
-            <button class="btn btn6">%</button>
-            <button class="btn btn7">AC</button>
-            <button class="btn btn8">Inv</button>
-            <button class="btn btn9">sin</button>
-            <button class="btn btn10">ln</button>
-            <button class="btn btn11">7</button>
-            <button class="btn btn12">8</button>
-            <button class="btn btn13">9</button>
-            <button class="btn btn14">:</button>
-            <button class="btn btn15">π</button>
-            <button class="btn btn16">cos</button>
-            <button class="btn btn17">log</button>
-            <button class="btn btn18">4</button>
-            <button class="btn btn19">5</button>
-            <button class="btn btn20">6</button>
-            <button class="btn btn21">x</button>
-            <button class="btn btn22">e</button>
-            <button class="btn btn23">tan</button>
-            <button class="btn btn24">√</button>
-            <button class="btn btn25">1</button>
-            <button class="btn btn26">2</button>
-            <button class="btn btn27">3</button>
-            <button class="btn btn28">-</button>
-            <button class="btn btn29">Ans</button>
-            <button class="btn btn30">EXP</button>
-            <button class="btn btn31">x**y</button>
-            <button class="btn btn32">0</button>
-            <button class="btn btn33">.</button>
-            <button class="btn btn34">=</button>
-            <button class="btn btn35">+</button>
+            <button class="trigonometri" data-type="">rad</button>
+            <button class="trigonometri ">deg</button>
+            <button >x!</button>
+            <button >(</button>
+            <button >)</button>
+            <button class="operators" data-type="operator" id="remainder" value="%" >&#37</button>
+            <button class="allClear" data-type="reset" id="allClear">AC</button>
+            <button >Inv</button>
+            <button class="trigonometri">sin</button>
+            <button >ln</button>
+            <button class="digits" data-type="number" id="digit-7" value="7">7</button>
+            <button class="digits" data-type="number" id="digit-8" value="8">8</button>
+            <button class="digits" data-type="number" id="digit-9" value="9">9</button>
+            <button class="operators" data-type="operator" id="divide" value="/">:</button>
+            <button >π</button>
+            <button class="trigonometri">cos</button>
+            <button >log</button>
+            <button class="digits" data-type="number" id="digit-4" value="4">4</button>
+            <button class="digits" data-type="number" id="digit-5" value="5">5</button>
+            <button class="digits" data-type="number" id="digit-6" value="6">6</button>
+            <button class="operators" data-type="operator" id="multiply" value="x" >&#215</button>
+            <button >e</button>
+            <button class="trigonometri">tan</button>
+            <button class="operators">√</button>
+            <button class="digits" data-type="number" id="digit-1" value="1">1</button>
+            <button class="digits" data-type="number" id="digit-2" value="2">2</button>
+            <button class="digits" data-type="number" id="digit-3" value="3">3</button>
+            <button class="operators" data-type="operator" id="minus" value="-" >&#45</button>
+            <button >Ans</button>
+            <button >EXP</button>
+            <button >x**y</button>
+            <button class="digits" data-type="number" id="digit-0" value="0">0</button>
+            <button class="decimal" data-type="decimal" id="decimal" value="." >.</button>
+            <button class="operators" data-type="equal" id="equals" value="=">&#61</button>
+            <button class="operators" data-type="operator" id="plus" value="+" >&#43</button>
         </div>
 
     </div>
